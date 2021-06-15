@@ -126,5 +126,5 @@ console.log(`тип данных ${value}, через конструктор Num
 
 // 2й способ через унарный +
 toNumber = +value;
-console.log(`${value}, через унарный +: `, toNumber)
-console.log(`тип данных ${value}, через унарный +: `, typeof toNumber) // станет из object'а нулем
+console.log(`${value}, через унарный +: `, toNumber);
+console.log(`тип данных ${value}, через унарный +: `, typeof toNumber); // станет из object'а нулем 
