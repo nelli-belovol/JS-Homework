@@ -13,7 +13,7 @@
   "jsxSingleQuote": false,
   "quoteProps": "as-needed",
   "requirePragma": false,
-  "semi": false,
+  "semi": true,
   "vueIndentScriptAndStyle": false,
   "singleAttributePerLine": false
 }
