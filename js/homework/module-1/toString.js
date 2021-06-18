@@ -132,3 +132,9 @@ console.log(`тип данных ${value}, через конкатенацию: 
 // Вызов функции getSubstring('Hello world', 8) возвращает 'Hello wo'
 // Вызов функции getSubstring('Hello world', 11) возвращает 'Hello world'
 // Вызов функции getSubstring('Hello world', 0) возвращает ''
+
+function isNumberInRange(start, end, number) {
+  const isInRange = number >= start && number <= end; // Change this line
+
+  return isInRange;
+}
