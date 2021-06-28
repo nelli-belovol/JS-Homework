@@ -47,7 +47,7 @@
 // console.log(mySrting.length); // длина строки 17 символов
 // console.log(mySrting[0]); // буква 'I'
 
-//toLowerCase() & toUpperCase()
+//toLowerCase() & erCase()
 // console.log(mySrting.toLowerCase());
 
 //indexOf() & includes()
