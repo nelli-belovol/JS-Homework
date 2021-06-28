@@ -93,4 +93,83 @@ console.log(objValues);
 const objEntries = Object.entries(obj);
 console.log(objEntries);
 
-// SPREAD
+// SPREAD - распыление ...
+
+const numbers = [1, 2, 3, 4, 5, 6, 86];
+console.log(Math.max(...numbers));
+
+// создание нового массива через распыление
+
+const newNumbers = [...numbers];
+console.log(newNumbers);
+console.log(newNumbers === numbers);
+
+// распыление массивов и добавление их в новый массив
+
+const bestArray = [...numbers, 'Js', ...newNumbers.slice(-1)];
+console.log(newNumbers);
+
+// распыление объектов
+
+const user = { name: 'Bill' };
+const newUser = { company: ['IBM'] };
+
+const superUser = { ...user, gender: 'male', ...newUser };
+console.log(superUser);
+//----------------------------------------------------------
+function getTotalResolt(...scores) {
+  console.log(scores);
+  let total = 0;
+  for (let i = 0; i < getTotalResolt.length; i += 1) {
+    console.log(scores[i]);
+    total += scores[i]; // total = total +dcores[i]
+    return total;
+  }
+}
+
+let result = getTotalResolt(23, 45, 44, 555, 8787, 21);
+
+// Destructuring _ способ достать ключ или значение
+
+const myFavoriteMusic = {
+  rock: {
+    bands: ['Rammstein', 'Limp Biskit'],
+  },
+};
+
+console.log(myFavoriteMusic.rock.bands);
+myFavoriteMusic.rock.bands.push('Linkin Park');
+console.log(myFavoriteMusic.rock.bands);
+
+const {
+  rock: { bands, songs },
+} = myFavoriteMusic;
+
+console.log(bands);
+bands.push('Bi-2');
+console.log(bands);
+console.log(songs);
+
+const { rock: objectOfRock } = myFavoriteMusic; // деструктуризация 1го уровня с переименованием внутр
+console.log(objectOfRock);
+
+// Деструктуризация массива
+
+const array = ['Sandra', [], 30];
+const [, , age] = array;
+
+console.log(age);
+
+//-------------------------------
+const user1 = {
+  userName: 'Super User',
+
+  // ES6
+  changeName(value) {
+    console.log(this.userName);
+    this.userName = value;
+    console.log(this.userName);
+    return this.userName;
+  },
+};
+user1.changeName('Sandra');
