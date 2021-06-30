@@ -16,4 +16,5 @@
 // import './js/homework/module-2/tasks-m2.js';
 // import './js/Repeta/functions.js';
 // import './js/homework/module-3/objects.js';
-import './js/homework/module-3/module-3-1.js';
+// import './js/homework/module-3/module-3-1.js';
+import './js/homework/module-3/module-3-2.js';
