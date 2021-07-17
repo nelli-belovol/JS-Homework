@@ -18,9 +18,14 @@
 // import './js/homework/module-3/objects.js';
 // import './js/homework/module-3/module-3-1.js';
 // import './js/homework/module-3/module-3-2.js';
-// import './js/homework/module-3/tasks-m3.js';
+import './js/homework/module-3/tasks-m3.js';
 // import './js/homework/module-4/callback.js';
 // import './js/homework/module-4/module-4-1-callback.js';
 // import './js/homework/module-4/module-4-1-closure.js';
 // import './js/homework/module-4/module-4-2.js';
-import './js/homework/module-4/module-4-2-this.js';
+// import './js/homework/module-4/module-4-2-this.js';
+// import './js/homework/module-4/tasks-m4.js';
+// import './js/homework/module-5/constructors.js';
+// import './js/homework/module-5/module-5-1.js';
+// import './js/homework/module-5/module-5-2.js';
+// import './js/homework/module-5/module-5-2-class-extends.js';

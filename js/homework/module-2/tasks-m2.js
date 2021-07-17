@@ -82,51 +82,30 @@ rgbToHex(200, 15, 10);
 //------------------------------------------------------------------------------------------------------------
 
 // Написати ф-ю яка приймає масив і видаляє звідти всі унікальні елементи
-// nonUniqueElements([1, 2, 3, 1, 3]) // [1, 3, 1, 3]
-// nonUniqueElements([1, 2, 3, 4, 5]) // []
+function nonUniqueElements(array) {
+  const repeat = [];
+
+  for (let value of array) {
+    console.log(repeat[value]);
+    if (repeat[value] === undefined) {
+      repeat[value] = 0;
+    }
+    repeat[value] = repeat[value] + 1;
+  }
+  console.log('Массив повторов', repeat);
+  const result = [];
+  for (let el of array) {
+    if (repeat[el] > 1) {
+      result.push(el);
+    }
+  }
+  return result;
+}
+
+console.log(nonUniqueElements([1, 2, 3, 1, 3])); // [1, 3, 1, 3]
+// nonUniqueElements([1, 2, 3, 4, 5]); // []
 // nonUniqueElements([5, 5, 5, 5, 5]) // [5, 5, 5, 5, 5]
 // nonUniqueElements([10, 9, 10, 10, 9, 8]) // [10, 9, 10, 10, 9]
-
-// const ar = [10, 20, 20, 10, 10, 30, 50, 10, 20];
-
-// function pairs(a) {
-//   var pairCount = 0;
-
-//   for (var i = 0; i < ar.length; i++) {
-//     for (var j = i + 1; j < ar.length; j++) {
-//       if (ar[i] === ar[j]) {
-//         pairCount++;
-//       }
-//     }
-//   }
-//   return pairCount;
-// }
-// console.log(pairs(ar));
-
-// const deleteUnique = function (nonUniqueElements) {
-//   for (let i = 0; i < nonUniqueElements.length; i += 1) {
-//       let a = nonUniqueElements[i];
-//       if (nonUniqueElements[i] === for (let j = i + 1; j < nonUniqueElements.length; j += 1) {nonUniqueElements[j]}) {
-//           return a;
-//       }
-// }
-
-// };
-// console.log(deleteUnique([1, 2, 3, 1, 3]));
-
-// const deleteUnique = function (nonUniqueElements) {
-//   let newArray = [];
-//   for (let i = 0; i < nonUniqueElements.length; i += 1) {
-//     if (nonUniqueElements.includes(nonUniqueElements[i])) {
-//       let indexEl = nonUniqueElements.indexOf(nonUniqueElements[i]);
-//       let newArray = nonUniqueElements.splice(indexEl, 1);
-//       }
-//   return newArray;
-
-//   }
-// };
-
-// console.log(deleteUnique([1, 2, 3, 1, 3]));
 
 //Написати ф-ю median яка приймає масив і знаходить його медіану Медіана – це числове значення, яке ділить відсортований масив чисел на більшу і меншу половини. У відсортованому масиві з непарним числом елементів медіана – це число в середині масиву. Для масиву з парним числом елементів, де нема ні одного елемента точно посередині, медіана – це середнє значення двох чисел, які знаходяться в середині масиву. В цій задачі заданий непустий масив натуральних чисел. Вам потрібно знайти медіану даного масиву.
 // median([1, 2, 3, 4, 5]) // 3
