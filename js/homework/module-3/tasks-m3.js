@@ -210,7 +210,7 @@ const pizza = {
     if (!this.getValidation) {
       return 'error';
     }
-    return console.log(this.getPizzaPrice(), this.getPizzaCal(), this.getPizzaTime());
+    return [this.getPizzaPrice(), this.getPizzaCal(), this.getPizzaTime()];
   },
 };
 pizza.addStuffing('TOMATO');
