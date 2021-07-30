@@ -24,10 +24,13 @@
 // import './js/homework/module-4/module-4-1-closure.js';
 // import './js/homework/module-4/module-4-2.js';
 // import './js/homework/module-4/module-4-2-this.js';
-import './js/homework/module-4/tasks-m4.js';
+// import './js/homework/module-4/tasks-m4.js';
 // import './js/homework/module-5/constructors.js';
 // import './js/homework/module-5/module-5-1.js';
 // import './js/homework/module-5/module-5-2.js';
 // import './js/homework/module-5/module-5-2-class-extends.js';
+// import './js/homework/module-5/tasks-m5.js';
 // import './js/homework/module-6/module-6-1.js';
 // import './js/homework/module-6/module-6-2-tasks.js';
+// import './js/homework/module-6/questions-m1-m6.js';
+import './js/homework/module-6/tasks-m6.js';

@@ -55,31 +55,31 @@
 // свойства title, price, category
 // методы  showTitle, showCategory, showPrice
 // updateTitlem updateCategory, updatePrice
-function MainProduct(title = 'product', category = 'cat', price = 0) {
-  this.title = title;
-  this.category = category;
-  this.price = price;
-}
+// function MainProduct(title = 'product', category = 'cat', price = 0) {
+//   this.title = title;
+//   this.category = category;
+//   this.price = price;
+// }
 
-// через prototype
-MainProduct.prototype.showTitle = function () {
-  console.log(this.title);
-};
-MainProduct.prototype.showCategory = function () {
-  console.log(this.category);
-};
-MainProduct.prototype.showPrice = function () {
-  console.log(this.price);
-};
-MainProduct.prototype.updateTitle = function (value) {
-  return (this.title = value);
-};
-MainProduct.prototype.updateCategory = function (value) {
-  return (this.category = value);
-};
-MainProduct.prototype.updatePrice = function (value) {
-  return (this.price = value);
-};
+// // через prototype
+// MainProduct.prototype.showTitle = function () {
+//   console.log(this.title);
+// };
+// MainProduct.prototype.showCategory = function () {
+//   console.log(this.category);
+// };
+// MainProduct.prototype.showPrice = function () {
+//   console.log(this.price);
+// };
+// MainProduct.prototype.updateTitle = function (value) {
+//   return (this.title = value);
+// };
+// MainProduct.prototype.updateCategory = function (value) {
+//   return (this.category = value);
+// };
+// MainProduct.prototype.updatePrice = function (value) {
+//   return (this.price = value);
+// };
 
 // через класс И get set
 
@@ -172,22 +172,22 @@ MainProduct.prototype.updatePrice = function (value) {
 
 // классом
 
-class CountProduct extends MainProduct {
-  constructor(count, title, category, price) {
-    super(title, category, price);
-    this.count = count;
-  }
+// class CountProduct extends MainProduct {
+//   constructor(count, title, category, price) {
+//     super(title, category, price);
+//     this.count = count;
+//   }
 
-  incrementCount(value) {
-    return (this.count += value);
-  }
+//   incrementCount(value) {
+//     return (this.count += value);
+//   }
 
-  decrementCount(value) {
-    if (this.count >= 0) return (this.count -= value);
-  }
-}
-const snikers = new CountProduct(5, 'Snikers', 'sweets', 22);
-console.log(snikers);
+//   decrementCount(value) {
+//     if (this.count >= 0) return (this.count -= value);
+//   }
+// }
+// const snikers = new CountProduct(5, 'Snikers', 'sweets', 22);
+// console.log(snikers);
 
 //Добавь классу Admin метод constructor, который принимает один параметр - объект настроек с двумя свойствами email и accessLevel. Добавь классу Admin публичное свойство accessLevel, значение которого будет передаваться при вызове конструктора.
 // Чтобы показать как будет использоваться класс Admin, мы добавили инициализацию экземпляра под объявлением класса.
