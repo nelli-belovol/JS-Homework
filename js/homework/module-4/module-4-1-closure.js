@@ -14,15 +14,15 @@ poly('Рыба');
 function createCounter() {
   //- createCounter - функция высшего порядка, потому что она возвращает 2 другие функции
   // лексическое окружение функции lexical environment
-  let currnet = 0;
+  let current = 0;
 
   function increment(value) {
     return (current += value);
   }
 
   function decrement(value) {
-    if (currnet < 0) return;
-    return (currnet -= value);
+    if (current < 0) return;
+    return (current -= value);
   }
   return { increment, decrement };
 }
