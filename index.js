@@ -33,4 +33,4 @@
 // import './js/homework/module-6/module-6-1.js';
 // import './js/homework/module-6/module-6-2-tasks.js';
 // import './js/homework/module-6/questions-m1-m6.js';
-import './js/homework/module-6/tasks-m6.js';
+// import './js/homework/module-6/tasks-m6.js';
